@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReactRepo/static/css/main.db13857b.css",
+    "main.js": "/ReactRepo/static/js/main.0e2d4d1c.js",
+    "static/js/592.e8d692c2.chunk.js": "/ReactRepo/static/js/592.e8d692c2.chunk.js",
+    "index.html": "/ReactRepo/index.html",
+    "main.db13857b.css.map": "/ReactRepo/static/css/main.db13857b.css.map",
+    "main.0e2d4d1c.js.map": "/ReactRepo/static/js/main.0e2d4d1c.js.map",
+    "592.e8d692c2.chunk.js.map": "/ReactRepo/static/js/592.e8d692c2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db13857b.css",
+    "static/js/main.0e2d4d1c.js"
+  ]
+}
