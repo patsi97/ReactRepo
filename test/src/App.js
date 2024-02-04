@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import AppQuizNavBar from "./QuizNavBar/AppQuizNavBar";
+import AppFunction from "./AppFunction/AppFunction";
+import AppColorPicker from "./ColorPicker/AppColorPicker";
+import Forecast from "./Forecast/Forecast";
+import GroceryCart from "./GroceryCart/GroceryCart";
+import PersonalPizza from "./PersonalPizza/PersonalPizza";
+import PhoneNumber from "./PhoneNumber/PhoneNumber";
+import Contact from "./Contact/Contact";
+import Counter from "./CounterWithEffect/Counter";
+import Timer from "./CounterWithEffect/Timer";
+import {ButtonCounter} from "./ButtonCounter/ButtonCounter";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="container">
+        <AppQuizNavBar/>
+        <AppFunction/>
+        <AppColorPicker/>
+        <Forecast/>
+        <GroceryCart/>
+        <PersonalPizza/>
+        <PhoneNumber/>
+        <Contact/>
+        <Counter/>
+        <Timer/>
+        <ButtonCounter/>
+      </div>
   );
 }
 
-export default App;
+
