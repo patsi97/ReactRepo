@@ -13,12 +13,12 @@ import {ButtonCounter} from "./ButtonCounter/ButtonCounter";
 import React, {useState} from "react";
 
 export default function App() {
-  const [show1, setShow1] = useState({})
-  const [show2, setShow2] = useState({})
-  const [show3, setShow3] = useState({})
-  const [show4, setShow4] = useState({})
-  const [show5, setShow5] = useState({})
-  const [show6, setShow6] = useState({})
+  const [show1, setShow1] = useState(false)
+  const [show2, setShow2] = useState(false)
+  const [show3, setShow3] = useState(false)
+  const [show4, setShow4] = useState(false)
+  const [show5, setShow5] = useState(false)
+  const [show6, setShow6] = useState(false)
   /* const handleClick= (input) => {
      setShow(prevState => ({...prevState, [input]: !prevState[input] }));
   } {
@@ -50,7 +50,7 @@ export default function App() {
           <button onClick={() => setShow5(!show5)}>Contact</button>
           {show5 ? <Contact/> : null}  </div>
         <div className="TaskApp">
-          <button onClick={() => setShow6(!show6)}>Contact</button>
+          <button onClick={() => setShow6(!show6)}>Task List</button>
           {show6 ? <AppFunction/> : null}  </div>
 
       </div>

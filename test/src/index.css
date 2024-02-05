@@ -13,21 +13,28 @@ code {
 }
 
 .container {
-  max-width: 30%;
+  max-width: 40%;
   margin: 25px 50px 75px;
+  align-content: center;
 }
-
+div{
+  height: max-content;
+}
 button:hover {
-  background-color: rgb(239, 234, 234); /* Green */
+  background-color: rgb(197, 231, 255); /* Green */
   color: #0b0a0a;
+  transition-duration: 0.4s;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 button {
   background-color: white;
   color: black;
-  border: 2px solid #000000;
+  border: 2px solid #08005d;
   font-size: 15px;
-
+  padding: 15px 20px;
+  border-radius: 12px;
 }
+
 h1{
   font-size: 40px;
 }
@@ -35,7 +42,7 @@ h1{
   margin: 25px;
 }
 .PickerColor {
-  margin: 25px;
+  margin: 25px 50px 25px;
 }
 .GroceryCart {
   margin: 25px;

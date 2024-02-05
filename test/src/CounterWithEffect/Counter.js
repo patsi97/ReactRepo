@@ -14,5 +14,5 @@ export default function Counter() {
     };
   });
 
-  return <h1>Document Clicks: {clickCount}</h1>;
+  return <h1>Document clicks: {clickCount}</h1>;
 }
