@@ -14,4 +14,39 @@ code {
 
 .container {
   max-width: 30%;
+  margin: 25px 50px 75px;
 }
+
+button:hover {
+  background-color: rgb(239, 234, 234); /* Green */
+  color: #0b0a0a;
+}
+button {
+  background-color: white;
+  color: black;
+  border: 2px solid #000000;
+  font-size: 15px;
+
+}
+h1{
+  font-size: 40px;
+}
+.QuizNavBar {
+  margin: 25px;
+}
+.PickerColor {
+  margin: 25px;
+}
+.GroceryCart {
+  margin: 25px;
+}
+.PersonalPizza {
+  margin: 25px;
+}
+.Contact {
+  margin: 25px;
+}
+.TaskApp {
+  margin: 25px;
+}
+

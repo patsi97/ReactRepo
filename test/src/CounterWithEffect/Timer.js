@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Timer() {
   const [time, setTime] = useState(0);
@@ -8,17 +8,17 @@ export default function Timer() {
     const intervalId = setInterval(() => {
       setTime((prev) => prev + 1);
     }, 1000);
-    //geschweifte Klammer {} kann mehrere Zeile ausführen, funktioniert auch ohne klammer in diesem Fall?
-    return clearInterval(intervalId);
+
+    // Cleanup function to clear the interval when the component is unmounted
+    return () => clearInterval(intervalId);
   }, []);
 
-// {target} = event.target -> kann ich input element bearbeiten
-  const handleChange = ({target}) => setName(target.value);
+  const handleChange = ({ target }) => setName(target.value);
 
   return (
       <>
-        <h1>Time: {time}</h1>
-        <input value={name} onChange={handleChange} type="text"/>
+        <h2>How many seconds u have spend here: {time}</h2>
+        <input value={name} onChange={handleChange} type="text" />
       </>
   );
 }
