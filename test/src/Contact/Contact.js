@@ -8,7 +8,7 @@ function Contact() {
     const enteredPassword = e.target.querySelector(
         'input[type="password"]'
     ).value;
-    const auth = enteredPassword == password;
+    const auth = enteredPassword === password;
     setAuthorized(auth);
   }
 

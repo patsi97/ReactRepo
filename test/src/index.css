@@ -19,6 +19,8 @@ code {
 }
 div{
   height: max-content;
+  border: #0b0a0a;
+
 }
 button:hover {
   background-color: rgb(197, 231, 255); /* Green */

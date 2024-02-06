@@ -11,6 +11,7 @@ import Counter from "./CounterWithEffect/Counter";
 import Timer from "./CounterWithEffect/Timer";
 import {ButtonCounter} from "./ButtonCounter/ButtonCounter";
 import React, {useState} from "react";
+import PassingThoughtsApp from "./PassingThoughts/PassingThoughtsApp";
 
 export default function App() {
   const [show1, setShow1] = useState(false)
@@ -52,8 +53,9 @@ export default function App() {
         <div className="TaskApp">
           <button onClick={() => setShow6(!show6)}>Task List</button>
           {show6 ? <AppFunction/> : null}  </div>
-
+        <PassingThoughtsApp></PassingThoughtsApp>
       </div>
+
   );
 }
 
