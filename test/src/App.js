@@ -12,6 +12,7 @@ import Timer from "./CounterWithEffect/Timer";
 import {ButtonCounter} from "./ButtonCounter/ButtonCounter";
 import React, {useState} from "react";
 import PassingThoughtsApp from "./PassingThoughts/PassingThoughtsApp";
+import PickYourFavoriteCatApp from "./PickFavoriteCat/PickYourFavoriteCatApp";
 
 export default function App() {
   const [show1, setShow1] = useState(false)
@@ -20,6 +21,8 @@ export default function App() {
   const [show4, setShow4] = useState(false)
   const [show5, setShow5] = useState(false)
   const [show6, setShow6] = useState(false)
+  const [show7, setShow7] = useState(false)
+  const [show8, setShow8] = useState(false)
   /* const handleClick= (input) => {
      setShow(prevState => ({...prevState, [input]: !prevState[input] }));
   } {
@@ -30,7 +33,6 @@ export default function App() {
               <AppQuizNavBar/>
         }
   */
-
   return (
       <div className="container">
         <Counter/>
@@ -53,7 +55,13 @@ export default function App() {
         <div className="TaskApp">
           <button onClick={() => setShow6(!show6)}>Task List</button>
           {show6 ? <AppFunction/> : null}  </div>
-        <PassingThoughtsApp></PassingThoughtsApp>
+        <div className="PassingThoughts">
+          <button onClick={() => setShow7(!show7)}>Passing Thoughts</button>
+          {show7 ? <PassingThoughtsApp/> : null}  </div>
+        <div className="PickYourCat">
+          <button onClick={() => setShow8(!show8)}>Pick your favorite Cat</button>
+          {show8 ? <PickYourFavoriteCatApp/> : null}  </div>
+
       </div>
 
   );

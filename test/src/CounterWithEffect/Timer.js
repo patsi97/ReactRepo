@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 export default function Timer() {
   const [time, setTime] = useState(0);
   const [name, setName] = useState("");
+
 // <input value={name} onChange={handleChange} type="text" />
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -17,7 +18,7 @@ export default function Timer() {
 
   return (
       <>
-        <h2>Timer: {time} seconds</h2>
+        <h2>Time you've wasted on this site: {time} seconds</h2>
       </>
   );
 }
