@@ -10,6 +10,7 @@ const CHOICES = [
 const choiceStyles = {
   display: "flex",
   textAlign: "center",
+  flexDirection: "column-reverse",
   marginBottom: 40,
 };
 
