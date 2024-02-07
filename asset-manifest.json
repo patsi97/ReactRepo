@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactRepo/static/css/main.05973856.css",
-    "main.js": "/ReactRepo/static/js/main.70c4e086.js",
+    "main.css": "/ReactRepo/static/css/main.dc1b45ee.css",
+    "main.js": "/ReactRepo/static/js/main.c2731612.js",
     "static/js/592.e8d692c2.chunk.js": "/ReactRepo/static/js/592.e8d692c2.chunk.js",
     "static/media/Racoon.jpg": "/ReactRepo/static/media/Racoon.b699dd4e0dd7d97801b9.jpg",
     "static/media/NorweiganForest.jpg": "/ReactRepo/static/media/NorweiganForest.21c965d4dbf5a4e536c6.jpg",
@@ -10,12 +10,12 @@
     "static/media/Bengal.jpg": "/ReactRepo/static/media/Bengal.c9adbdd840aeab7c83b8.jpg",
     "static/media/Siamese.jpg": "/ReactRepo/static/media/Siamese.2b8e07354bd1f20c5717.jpg",
     "index.html": "/ReactRepo/index.html",
-    "main.05973856.css.map": "/ReactRepo/static/css/main.05973856.css.map",
-    "main.70c4e086.js.map": "/ReactRepo/static/js/main.70c4e086.js.map",
+    "main.dc1b45ee.css.map": "/ReactRepo/static/css/main.dc1b45ee.css.map",
+    "main.c2731612.js.map": "/ReactRepo/static/js/main.c2731612.js.map",
     "592.e8d692c2.chunk.js.map": "/ReactRepo/static/js/592.e8d692c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05973856.css",
-    "static/js/main.70c4e086.js"
+    "static/css/main.dc1b45ee.css",
+    "static/js/main.c2731612.js"
   ]
 }
