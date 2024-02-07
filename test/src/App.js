@@ -14,6 +14,7 @@ import React, {useState} from "react";
 import PassingThoughtsApp from "./PassingThoughts/PassingThoughtsApp";
 import PickYourFavoriteCatApp from "./PickFavoriteCat/PickYourFavoriteCatApp";
 import VideoPlayerApp from "./VideoPlayer/VideoPlayerApp";
+import Game from "./RockPaperScissors/Game";
 
 export default function App() {
   const [show1, setShow1] = useState(false)
@@ -25,23 +26,14 @@ export default function App() {
   const [show7, setShow7] = useState(false)
   const [show8, setShow8] = useState(false)
   const [show9, setShow9] = useState(false)
+  const [show10, setShow10] = useState(false)
 
-  /* const handleClick= (input) => {
-     setShow(prevState => ({...prevState, [input]: !prevState[input] }));
-  } {
-          <button onClick={ handleClick("Quiz")}>Quiz Navigation Bar</button>
-        }
-        {
-          show["Quiz"]&&
-              <AppQuizNavBar/>
-        }
-  */
   return (
       <div className="container">
         <Counter/>
         <Timer/>
-        <div className="QuizNavBar">
-          <button onClick={() => setShow1(!show1)}>Quiz Nav Bar</button>
+        <div className="PickerColor">
+          <button onClick={() => setShow1(!show1)}>Quiz Navigator Bar</button>
           {show1 ? <AppQuizNavBar/> : null} </div>
         <div className="PickerColor">
           <button onClick={() => setShow2(!show2)}>App picker Color</button>
@@ -67,6 +59,9 @@ export default function App() {
         <div className="VideoPlayer">
           <button onClick={() => setShow9(!show9)}>Video Player</button>
           {show9 ? <VideoPlayerApp/> : null}  </div>
+        <div className="Game">
+          <button onClick={() => setShow10(!show10)}>Game</button>
+          {show10 ? <Game/> : null}  </div>
       </div>
 
   );
