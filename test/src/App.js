@@ -13,6 +13,7 @@ import {ButtonCounter} from "./ButtonCounter/ButtonCounter";
 import React, {useState} from "react";
 import PassingThoughtsApp from "./PassingThoughts/PassingThoughtsApp";
 import PickYourFavoriteCatApp from "./PickFavoriteCat/PickYourFavoriteCatApp";
+import VideoPlayerApp from "./VideoPlayer/VideoPlayerApp";
 
 export default function App() {
   const [show1, setShow1] = useState(false)
@@ -23,6 +24,8 @@ export default function App() {
   const [show6, setShow6] = useState(false)
   const [show7, setShow7] = useState(false)
   const [show8, setShow8] = useState(false)
+  const [show9, setShow9] = useState(false)
+
   /* const handleClick= (input) => {
      setShow(prevState => ({...prevState, [input]: !prevState[input] }));
   } {
@@ -61,7 +64,9 @@ export default function App() {
         <div className="PickYourCat">
           <button onClick={() => setShow8(!show8)}>Pick your favorite Cat</button>
           {show8 ? <PickYourFavoriteCatApp/> : null}  </div>
-
+        <div className="VideoPlayer">
+          <button onClick={() => setShow9(!show9)}>Video Player</button>
+          {show9 ? <VideoPlayerApp/> : null}  </div>
       </div>
 
   );
