@@ -20,7 +20,7 @@ code {
 div{
   height: max-content;
   border: #0b0a0a;
-
+  margin: 25px;
 }
 button:hover {
   background-color: rgb(197, 231, 255); /* Green */
@@ -41,23 +41,24 @@ h1{
   font-size: 40px;
 }
 .QuizNavBar {
-  margin: 25px;
+
 }
 .PickerColor {
-  margin: 25px 50px 25px;
+
 }
 .GroceryCart {
-  margin: 25px;
+
 }
 .PersonalPizza {
-  margin: 25px;
+
 }
-.Contact {
-  margin: 25px;
-}
+
 .TaskApp {
-  margin: 25px;
+
 }
 .PassingThoughts {
-  margin: 25px;
+
+}
+.PickYourCat{
+
 }

@@ -33,7 +33,6 @@ function Cats() {
     return () => clearInterval(intervalId);
   }, []);
 
-
   return (
       <>
         <div data-testid="guineaPigsSlideShow" id="guineaPigsSlideShow">
