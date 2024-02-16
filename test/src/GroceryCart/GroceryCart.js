@@ -28,7 +28,7 @@ export default function GroceryCart() {
               </li>
           ))}
         </ul>
-        <h2>Produce</h2>
+        <h2>Fresh products</h2>
         <ItemList items={produce} onItemClick={addItem}/>
         <h2>Pantry Items</h2>
         <ItemList items={pantryItems} onItemClick={addItem}/>

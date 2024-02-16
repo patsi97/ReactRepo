@@ -5,6 +5,7 @@ html, body {
   margin: 0;
 }
 
+
 * {
   font-family: Helvetica, Arial, sans-serif;
   box-sizing: border-box;
@@ -17,51 +18,48 @@ html, body {
   padding: 8px;
 }
 
-h1 {
+.h1 {
   margin: 8px 0;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-input,
+.input,
 textarea {
   padding: 5px;
   position: relative;
 
 }
 
-form button {
+.form button {
   position: absolute;
   top: 0;
   right: 0;
   padding: 5px;
 }
 
-ul {
+.ul {
   list-style: none;
   text-align: center;
-}
-
-ul {
   padding: 0;
 }
 
-li {
+.li {
   background-color: Cornsilk;
   border: 1px solid BurlyWood;
   border-radius: 5px 2px;
   margin: 8px 0;
 }
 
-li div {
+.li div {
   position: relative;
 }
 
-li div button {
+.li div button {
   position: absolute;
   top: 0;
   right: 0;
@@ -78,12 +76,12 @@ li div button:focus {
   box-shadow: 0 0 1px black;
 }
 
-li h2 {
+.li h2 {
   background-color: NavajoWhite;
   margin: 0;
   padding: 4px;
 }
 
-li p {
+.li p {
   margin: 8px;
 }

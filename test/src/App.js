@@ -1,15 +1,12 @@
 import './App.css';
 import AppQuizNavBar from "./QuizNavBar/AppQuizNavBar";
 import AppFunction from "./AppFunction/AppFunction";
-import AppColorPicker from "./ColorPicker/AppColorPicker";
-import Forecast from "./Forecast/Forecast";
+import ColorPicker from "./ColorPicker/ColorPicker";
 import GroceryCart from "./GroceryCart/GroceryCart";
 import PersonalPizza from "./PersonalPizza/PersonalPizza";
-import PhoneNumber from "./PhoneNumber/PhoneNumber";
 import Contact from "./Contact/Contact";
 import Counter from "./CounterWithEffect/Counter";
 import Timer from "./CounterWithEffect/Timer";
-import {ButtonCounter} from "./ButtonCounter/ButtonCounter";
 import React, {useState} from "react";
 import PassingThoughtsApp from "./PassingThoughts/PassingThoughtsApp";
 import PickYourFavoriteCatApp from "./PickFavoriteCat/PickYourFavoriteCatApp";
@@ -29,6 +26,8 @@ export default function App() {
   const [show9, setShow9] = useState(false)
   const [show10, setShow10] = useState(false)
   const [show11, setShow11] = useState(false)
+  const [color, setColor] = useState('Tomato');
+
   return (
       <div className="container">
         <Counter/>
@@ -38,7 +37,7 @@ export default function App() {
           {show1 ? <AppQuizNavBar/> : null} </div>
         <div className="PickerColor">
           <button onClick={() => setShow2(!show2)}>App picker Color</button>
-          {show2 ? <AppColorPicker/> : null} </div>
+          {show2 ? <ColorPicker color={color} setColor={setColor}/> : null} </div>
         <div className="GroceryCart">
           <button onClick={() => setShow3(!show3)}>Grocery Cart</button>
           {show3 ? <GroceryCart/> : null} </div>
