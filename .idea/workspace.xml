@@ -5,21 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c8ff55-93a2-46c8-b858-d95ed5ed4f14" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/src/NoButton/NoButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/src/NoButton/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/AppFunction/AppFunction.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/AppFunction/AppFunction.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/AppFunction/AppFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/AppFunction/AppFunction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/AppFunction/TasksList.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/AppFunction/TasksList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/ColorPicker/AppColorPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/ColorPicker/AppColorPicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/ColorPicker/ColorPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/ColorPicker/ColorPicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/App2.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/App2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,25 +42,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Node.js.App2.js.executor&quot;: &quot;Run&quot;,
-    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/ReactRepo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Node.js.App2.js.executor": "Run",
+    "Node.js.index.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Routing",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/ReactRepo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -99,6 +94,8 @@
       <workItem from="1707836936345" duration="443000" />
       <workItem from="1707838798028" duration="148000" />
       <workItem from="1707839543078" duration="5000" />
+      <workItem from="1708086840024" duration="33000" />
+      <workItem from="1708086884810" duration="44000" />
     </task>
     <servers />
   </component>
