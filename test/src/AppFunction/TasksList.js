@@ -1,8 +1,9 @@
 import React from "react";
+import styles from "./AppFunction.css";
 
 export default function TasksList({allTasks, handleDelete}) {
   return (
-      <ul>
+      <ul className={styles.ul}>
         {allTasks.map(({title, description, id}) => (
             <li key={id}>
               <div>

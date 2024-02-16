@@ -1,7 +1,9 @@
 import ColorPicker from "./ColorPicker";
 
-export default function AppColorPicker() {
+export default function AppColorPicker({color, setColor}) {
   return (
-      <ColorPicker/>
+      <div>
+        <ColorPicker color={color} setColor={setColor}/>
+      </div>
   );
 }
