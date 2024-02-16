@@ -23,7 +23,7 @@ import SearchBar from "./GroceryCart/SearchBar";
 
 const appRouter = (props) => createBrowserRouter(
     createRoutesFromElements(<Route path="/" element={<Root/>}>
-          <Route path="ReactRepo" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route index element={<Home/>}/>
           <Route path="colorpicker"
                  element={<ColorPicker setColor={props.setColor}
@@ -35,7 +35,7 @@ const appRouter = (props) => createBrowserRouter(
           <Route path="rockpaperscissors" element={<Game/>}/>
           <Route path="orderfood" element={<FoodOrderApp/>}/>
         </Route>
-    ));
+    ) , {basename:"/"});
 
 function App2() {
   const [background, setBackground] = useState("");
