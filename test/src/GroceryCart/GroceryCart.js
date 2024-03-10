@@ -1,37 +1,14 @@
-import React, {useState} from "react";
-import ItemList from "./ItemList";
-import {produce, pantryItems} from "./storeItems";
+import React from "react";
+import SearchBar from "./Components/SearchBar";
+import ProduceData from "./Data.json";
+import "./GroceryCart.css";
 
-export default function GroceryCart() {
-  // declare and initialize state
-  const [cart, setCart] = useState([]);
-
-  const addItem = (item) => {
-    setCart((prev) => {
-      return [item, ...prev];
-    });
-  };
-
-  const removeItem = (targetIndex) => {
-    setCart((prev) => {
-      return prev.filter((item, index) => index !== targetIndex);
-    });
-  };
-
+function GroceryCart() {
   return (
-      <div>
-        <h1>Grocery Cart</h1>
-        <ul>
-          {cart.map((item, index) => (
-              <li onClick={() => removeItem(index)} key={index}>
-                {item}
-              </li>
-          ))}
-        </ul>
-        <h2>Fresh products</h2>
-        <ItemList items={produce} onItemClick={addItem}/>
-        <h2>Pantry Items</h2>
-        <ItemList items={pantryItems} onItemClick={addItem}/>
-      </div>
+    <div className="SearchBooks">
+      <SearchBar placeholder="Search for Products..." data={ProduceData} />
+    </div>
   );
 }
+
+export default GroceryCart;

@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import NewTask from "./NewTask";
 import TasksList from "./TasksList";
-//import './AppFunction.css';
+
 
 export default function AppFunction() {
   const [newTask, setNewTask] = useState({});

@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6c8ff55-93a2-46c8-b858-d95ed5ed4f14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/src/NoButton/NoButton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/src/NoButton/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/test/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/src/App2.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/App2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/GroceryCart/GroceryCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/GroceryCart/GroceryCart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/GroceryCart/GroceryCart2.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/GroceryCart/GroceryCart2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/GroceryCart/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/GroceryCart/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/GroceryCart/storeItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/GroceryCart/storeItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/Navigation/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/Navigation/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/NoButton/NoButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/NoButton/NoButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/NoButton/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -50,7 +58,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Routing",
+    "git-widget-placeholder": "GroceryCartUpdate",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/ReactRepo",
     "node.js.detected.package.eslint": "true",
@@ -96,6 +104,7 @@
       <workItem from="1707839543078" duration="5000" />
       <workItem from="1708086840024" duration="33000" />
       <workItem from="1708086884810" duration="44000" />
+      <workItem from="1709575418505" duration="815000" />
     </task>
     <servers />
   </component>
