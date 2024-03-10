@@ -61,7 +61,6 @@ function SearchBar({ placeholder, data }) {
           ) : (
             <CloseIcon
               id="clearBtn"
-              type="button"
               aria-label="Clear search"
               onClick={clearInput}
             />
@@ -90,7 +89,12 @@ function SearchBar({ placeholder, data }) {
             {selectedItems.map((item, index) => (
               <li key={index}>
                 {item.produce}
-                <button onClick={() => onRemoveItemClick(index)}>x</button>
+                <button
+                  onClick={() => onRemoveItemClick(index)}
+                  className={styles.elementButton}
+                >
+                  x
+                </button>
               </li>
             ))}
           </ul>

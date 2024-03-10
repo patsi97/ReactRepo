@@ -75,20 +75,20 @@ a:hover {
 .selectedItems li{
   list-style-type: none;
   margin: 5px;
-  color: #eeeeee;
+  color: #ece7ee;
 }
 .selectedItems p{
   color: #eeeeee;
   font-size: 25px;
 }
 
-button {
+.elementButton {
   position: absolute;
   right: 0;
   width: 50px;
   align-items: center;
   border: #e7d3f2;
-  color: #ffffff;
-  background: #af63f0;
+  color: #f2eded;
+  background: rgba(239, 234, 234, 0.62);
   border-radius: 12px;
 }
