@@ -12,7 +12,6 @@ test("Title text is rendered correctly", async () => {
   expect(titleElement).toBeInTheDocument();
 });
 
-// when is not filtered out also check
 test("Items are shown in search bar when typing the letters", () => {
   render(<SearchBar placeholder="Search for Products..." data={ProduceData} />);
   // Retrieve the input element
@@ -26,7 +25,7 @@ test("Items are shown in search bar when typing the letters", () => {
   expect(screen.getByText("Cucumbers")).toBeInTheDocument();
   expect(screen.getByText("Avocados")).toBeInTheDocument();
   expect(screen.getByText("Spinach")).toBeInTheDocument();
-
+  // when is something not filtered out also check
   expect(screen.queryByText("Kale")).not.toBeInTheDocument();
 
   fireEvent.change(inputElement, { target: { value: "i" } });
@@ -64,7 +63,7 @@ test("Items are shown in search when typing the letters", () => {
 });
 */
 //make label for ClosingIcon
-test("Clears Field after clicking x button", () => {
+test("Clears field after clicking x button (fireEvent)", () => {
   render(
     <>
       <SearchBar placeholder="Search for Products..." data={ProduceData} />
@@ -82,13 +81,37 @@ test("Clears Field after clicking x button", () => {
   expect(inputElement.value).toBe("Carrots");
 
   // Retrieve the close icon
-  //const closeIcon = screen.getByLabelText("Clear search");
-  // Simulate clicking on the close icon
-  //fireEvent.click(closeIcon);
+  const closeIcon = screen.getByLabelText("Clear search");
 
-  const closeIcon = screen.getByRole("button", { name: "Clear search" });
   // Simulate clicking on the close icon
   fireEvent.click(closeIcon);
+
+  // Check if the input value is cleared
+  expect(inputElement.value).toBe("");
+});
+
+test("Clears Field after clicking x button (userEvent)", () => {
+  render(
+    <>
+      <SearchBar placeholder="Search for Products..." data={ProduceData} />
+      <CloseIcon />
+    </>
+  );
+
+  // Retrieve the input element
+  const inputElement = screen.getByPlaceholderText("Search for Products...");
+
+  // Simulate typing into the input element
+  userEvent.type(inputElement, "Carrots");
+
+  // Check if the input value is set to 'Carrots'
+  expect(inputElement.value).toBe("Carrots");
+
+  // Retrieve the close icon
+  const closeIcon = screen.getByLabelText("Clear search");
+
+  // Simulate clicking on the close icon
+  userEvent.click(closeIcon);
 
   // Check if the input value is cleared
   expect(inputElement.value).toBe("");
