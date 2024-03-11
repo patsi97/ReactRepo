@@ -2,16 +2,12 @@ import "./App.css";
 import AppFunction from "./AppFunction/AppFunction";
 import ColorPicker from "./ColorPicker/ColorPicker";
 import GroceryCart from "./GroceryCart/GroceryCart";
-import Counter from "./CounterWithEffect/Counter";
-import Timer from "./CounterWithEffect/Timer";
 import React, { useState } from "react";
 import PassingThoughtsApp from "./PassingThoughts/PassingThoughtsApp";
 import PickYourFavoriteCatApp from "./PickFavoriteCat/PickYourFavoriteCatApp";
 import Game from "./RockPaperScissors/Game";
 import FoodOrderApp from "./FoodOrderForm/FoodOrderApp";
 import Home from "./Navigation/pages/Home";
-import Navbar from "./Navigation/NavBar";
-import AppColorPicker from "./ColorPicker/AppColorPicker";
 import Root from "./components/root";
 
 import {
@@ -25,7 +21,7 @@ const appRouter = (props) =>
   createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
-        <Route path="/" element={<Home />} />
+        <Route path="ReactRepo" element={<Home />} />
         <Route index element={<Home />} />
         <Route
           path="colorpicker"
@@ -40,8 +36,8 @@ const appRouter = (props) =>
         <Route path="rockpaperscissors" element={<Game />} />
         <Route path="orderfood" element={<FoodOrderApp />} />
       </Route>
-    ),
-    { basename: "/" }
+    )
+    //{ basename: "/" }
   );
 
 function App2() {
