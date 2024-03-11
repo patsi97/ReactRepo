@@ -6,7 +6,7 @@ import ProduceData from "../Data.json";
 import "@testing-library/jest-dom";
 import CloseIcon from "@material-ui/icons/Close";
 
-test("Title text is rendered correctly", async () => {
+test("Title text is rendered correctly", () => {
   render(<SearchBar placeholder="Search for Products..." />);
   const titleElement = screen.queryByText("Grocery Cart:");
   expect(titleElement).toBeInTheDocument();
