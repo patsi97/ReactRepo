@@ -1,12 +1,13 @@
-import NoButton from "../../NoButton/NoButton.js";
+import React from "react";
+import styles from "./Home.module.css";
 
-const Home = () => {
+export default function HomePage() {
   return (
-      <>
-        <h1>Welcome to my page!</h1>
-
-      </>
+    <div className={styles.container}>
+      <div className={styles.content}>
+        <h1 className={styles.title}>Welcome to My Page</h1>
+        <p className={styles.subtitle}>Try out different React components</p>
+      </div>
+    </div>
   );
-};
-
-export default Home;
+}

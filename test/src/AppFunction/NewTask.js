@@ -1,25 +1,34 @@
 import React from "react";
+import styles from "./AppFunction.module.css";
 
-export default function NewTask({newTask, handleChange, handleSubmit}) {
+export default function NewTask({ newTask, handleChange, handleSubmit }) {
   return (
-      <form onSubmit={handleSubmit}>
+    <form className={styles.formContainer} onSubmit={handleSubmit}>
+      <div>
         <input
-            name="title"
-            placeholder="New task"
-            value={newTask.title || ""}
-            onChange={handleChange}
+          className={styles.inputField}
+          name="title"
+          placeholder="New task"
+          value={newTask.title || ""}
+          onChange={handleChange}
         />
-        {!newTask.title ? null : (
-            <>
+      </div>
+      {!newTask.title ? null : (
+        <div>
           <textarea
-              name="description"
-              placeholder="Details..."
-              value={newTask.description || ""}
-              onChange={handleChange}
+            className={styles.textareaField}
+            name="description"
+            placeholder="Details..."
+            value={newTask.description || ""}
+            onChange={handleChange}
           />
-              <button type="submit">Add Task</button>
-            </>
-        )}
-      </form>
+        </div>
+      )}
+      {!newTask.title ? null : (
+        <button className={styles.submitButton} type="submit">
+          Add Task
+        </button>
+      )}
+    </form>
   );
 }
