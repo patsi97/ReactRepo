@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import dataModel from "./dataModel";
+import dataModel from "./dataModel.js";
 
 export default function QuizNavBar({questions}) {
   const [questionIndex, setQuestionIndex] = useState(0);
