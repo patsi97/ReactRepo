@@ -1,14 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals.js";
+import App2 from "./App2.js";
+import Produce from "./GroceryCart/Data.json";
+import NoButton from "./NoButton/NoButton.js";
+import "./GroceryCart/GroceryCart.css";
+import GroceryCart from "./GroceryCart/GroceryCart.js";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  //<React.StrictMode>
-    <App />
-  //</React.StrictMode>
+  <React.StrictMode>
+    <App2 />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
